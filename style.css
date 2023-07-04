@@ -6,15 +6,47 @@
 .dp-menu ul{
     list-style-type:none;
     padding: 0;
+    color:var(--cor-primaria);
 }
 .dp-menu ul{
     background-color: var(--cor-fundo);
 }
 .dp-menu ul li {
-    display:inline-block;
+    display:inline;
+    position: relative;
 }
 .dp-menu ul li a{
     color:var(--cor-primaria);
     text-decoration:none;
+    display: inline-block;
+    padding:10px;
+}
+.dp-menu ul li a:hover{
+    background-color: var(--cor-hover);
+}
+
+/*sub menu*/
+.dp-menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+    
+}
+.dp-menu ul li:hover ul{
+    display: block;
+}
+.dp-menu ul ul {
+    width: 150px;
+   
+}
+.dp-menu ul ul li {
+    display: block;
+    color:var(--cor-primaria);
+}
+.dp-menu ul ul li:hover a ul li {
+    display:flex;
+    flex-direction: column;
+    background-color: var(--cor-hover);
+    padding: 10px;
 
 }
