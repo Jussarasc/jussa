@@ -1,0 +1,20 @@
+:root{
+    --cor-fundo:rgb( 32,25,71);
+    --cor-hover:rgb(243, 38, 168);
+    --cor-primaria : rgb(231,241,230);   
+}
+.dp-menu ul{
+    list-style-type:none;
+    padding: 0;
+}
+.dp-menu ul{
+    background-color: var(--cor-fundo);
+}
+.dp-menu ul li {
+    display:inline-block;
+}
+.dp-menu ul li a{
+    color:var(--cor-primaria);
+    text-decoration:none;
+
+}
